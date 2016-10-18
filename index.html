@@ -7,20 +7,20 @@
 <body>
     <h1>WYSWYG</h1>
 
-    <div class="tool-bar">
-        <button>B</button>
-        <button>I</button>
-        <button>下划线</button>
-        <button>红色</button>
-        <button>背景绿色</button>
-        <button>H1</button>
-        <button>Font 5</button>
-        <button>Font 25</button>
-        <button>Get content</button>
+    <div id="toolBar" class="tool-bar">
+        <button cmd='bold'>B</button>
+        <button cmd='italic'>I</button>
+        <button cmd='underline'>下划线</button>
+        <button cmd='foreColor' cmd-args='red'>红色</button>
+        <button cmd='bold'>背景绿色</button>
+        <button cmd='bold'>H1</button>
+        <button cmd='fontSize' cmd-args='40px'>Font 5em</button>
+        <button cmd='fontSize' cmd-args='80px'>Font 25</button>
+        <button cmd='bold'Get content</button>
     </div>
 
-    <div class="editor-content" contenteditable="true">
-        Default Text!
+    <div id="editorContent" class="editor-content" contenteditable="true">
+        Default<span style="color:red">你好吗<span style="font-size:24px">?</span></span>text!
     </div>
 
     <div class="status">
