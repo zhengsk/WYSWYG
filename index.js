@@ -30,6 +30,9 @@ var Command = {
         this.exec('foreColor', args);
     },
     fontSize: function(args){
+
+        var selection = this.getSelection();
+
         this.exec('fontSize', '7');
 
         // Clear element fontSize
@@ -42,8 +45,6 @@ var Command = {
                 });
             }
         }
-
-        var selection = this.getSelection();
 
         var firstEle = selection.anchorNode;
         if(firstEle.nodeType === 3){firstEle = firstEle.parentNode}
